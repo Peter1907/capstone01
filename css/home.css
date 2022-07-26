@@ -119,6 +119,10 @@ main h2 {
   height: 100px;
 }
 
+#program li img {
+  width: 50px;
+}
+
 #program li h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
