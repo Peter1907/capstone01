@@ -30,6 +30,57 @@ nav img {
   margin: 0;
 }
 
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #272a31;
+  position: fixed;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: -100%;
+  background-image: url(../media/bg.jpg);
+  background-size: 1400px;
+  background-position-x: 15%;
+  transition: all 0.3s ease-in-out;
+}
+
+footer img {
+  width: 170px;
+}
+
+.menu-container img {
+  height: 120px;
+}
+
+.menu-container button img {
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.menu-container a {
+  text-decoration: none;
+  color: #ec5242;
+}
+
+.menu-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style-type: none;
+  align-items: center;
+  padding-left: 0;
+  margin: 0;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -124,10 +175,6 @@ main h2 {
   min-width: auto;
   justify-content: space-between;
   height: 100px;
-}
-
-footer img {
-  width: 170px;
 }
 
 #program li img {
@@ -388,6 +435,7 @@ footer {
   main {
     align-self: flex-start;
     margin: 0 12%;
+    padding: 100px 0 130px;
   }
 
   main h3 {
@@ -477,7 +525,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     column-gap: 35px;
     width: auto;
-    margin: 35px auto;
+    margin: 70px auto;
   }
 
   #speakers li {
