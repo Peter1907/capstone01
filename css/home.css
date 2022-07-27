@@ -10,6 +10,10 @@ body {
   background-size: 1280px;
 }
 
+.desktop {
+  display: none;
+}
+
 nav {
   padding: 15px 20px;
 }
@@ -27,7 +31,6 @@ nav img {
 }
 
 main {
-  width: 380px;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -35,13 +38,15 @@ main {
 }
 
 main h3 {
+  width: 380px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: #eb5242;
+  color: #ec5242;
   font-size: 22px;
 }
 
 main h1 {
+  width: 380px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   margin: 0;
@@ -53,6 +58,7 @@ main h1 {
 }
 
 main p {
+  width: 380px;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   color: #272a31;
@@ -60,15 +66,17 @@ main p {
 
 .intro {
   border: 1px solid white;
-  background-color: #d3d3d3;
+  background-color: #eaeaea;
   border-radius: 2px;
   font-size: 14px;
   line-height: 22px;
   margin: 25px 0;
   padding: 10px 15px;
+  box-sizing: border-box;
 }
 
 main h2 {
+  width: 380px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   color: #272a31;
@@ -91,7 +99,7 @@ main h2 {
 
 .underline {
   width: 50px;
-  border-bottom: 2px solid #eb5242;
+  border-bottom: 2px solid #ec5242;
   margin: auto;
 }
 
@@ -101,7 +109,6 @@ main h2 {
   list-style-type: none;
   color: white;
   width: 380px;
-  max-width: 700px;
   padding: 0;
   margin: 30px auto 0 auto;
   gap: 20px;
@@ -119,6 +126,10 @@ main h2 {
   height: 100px;
 }
 
+footer img {
+  width: 170px;
+}
+
 #program li img {
   width: 50px;
 }
@@ -126,7 +137,7 @@ main h2 {
 #program li h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
-  color: #eb5242;
+  color: #ec5242;
   width: 100px;
   flex-shrink: 0;
   text-align: left;
@@ -143,7 +154,7 @@ main h2 {
 #program button {
   font-family: 'Lato', sans-serif;
   color: white;
-  background-color: #eb5242;
+  background-color: #ec5242;
   border: none;
   border-radius: 2px;
   font-weight: 700;
@@ -179,10 +190,6 @@ main h2 {
   align-items: center;
 }
 
-footer img {
-  width: 170px;
-}
-
 #speakers li img {
   width: 150px;
   height: auto;
@@ -207,7 +214,7 @@ footer img {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
   font-style: italic;
-  color: #eb5242;
+  color: #ec5242;
   margin: 0;
 }
 
@@ -233,7 +240,7 @@ footer img {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 30px;
-  color: white;
+  color: #d3d3d3;
   margin: 20px;
 }
 
@@ -288,4 +295,212 @@ footer {
 #p5 {
   grid-row: 2/3;
   grid-column: 5/8;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .desktop nav {
+    display: flex;
+  }
+
+  .desktop ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav-1 {
+    background-color: #272a31;
+    padding: 4px 12%;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .nav-2 {
+    background-color: white;
+    padding: 0 12% 8px 12%;
+    align-items: center;
+  }
+
+  .nav-1-list {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    gap: 20px;
+    padding: 0 0 0 10px;
+  }
+
+  .nav-1-list li,
+  .nav-2-list li {
+    cursor: pointer;
+  }
+
+  .nav-2-list {
+    margin-left: auto;
+    margin-right: 70px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #272a31;
+    gap: 70px;
+  }
+
+  .nav-2-list a {
+    text-decoration: none;
+    color: #ec5242;
+  }
+
+  footer img {
+    width: 280px;
+  }
+
+  .nav-1 img {
+    height: 18px;
+  }
+
+  .nav-2 img {
+    height: 80px;
+  }
+
+  .nav-2 span {
+    color: #ec5242;
+    border: 5px solid #ec5242;
+    padding: 12px 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .container {
+    background-image: url(../media/bg.jpg);
+    background-size: 1920px;
+    background-position-y: 4.5%;
+  }
+
+  main {
+    align-self: flex-start;
+    margin: 0 12%;
+  }
+
+  main h3 {
+    font-size: 42px;
+    width: auto;
+    font-weight: 500;
+  }
+
+  main h1 {
+    width: 900px;
+    font-size: 72px;
+    background-position-y: 10%;
+  }
+
+  .intro {
+    width: 600px;
+    font-size: 18px;
+  }
+
+  main p {
+    font-size: 24px;
+    width: auto;
+  }
+
+  main h2 {
+    font-size: 38px;
+    width: auto;
+  }
+
+  #program h2 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  #program ul {
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 50px;
+  }
+
+  #program li {
+    flex-direction: column;
+    gap: 5px;
+    height: auto;
+    justify-content: flex-start;
+    padding: 20px 10px;
+  }
+
+  #program li h3 {
+    width: auto;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
+
+  #program li p {
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+  }
+
+  #program button {
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+    word-spacing: 4px;
+    padding: 0;
+    margin: 100px auto 130px;
+  }
+
+  #speakers {
+    padding: 50px 12%;
+    margin: 0;
+  }
+
+  #speakers h2 {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  #speakers ul {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+    width: auto;
+    margin: 35px auto;
+  }
+
+  #speakers li {
+    width: 550px;
+  }
+
+  #partners {
+    padding: 35px 12%;
+  }
+
+  #partners ul {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #partners ul img {
+    width: 150px;
+  }
+
+  footer {
+    padding: 35px 12%;
+    gap: 300px;
+  }
 }

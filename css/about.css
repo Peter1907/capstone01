@@ -10,6 +10,10 @@ body {
   background-size: 1280px;
 }
 
+.desktop {
+  display: none;
+}
+
 .underline {
   width: 50px;
   border-bottom: 2px solid #eb5242;
@@ -33,7 +37,6 @@ nav img {
 }
 
 main {
-  width: 380px;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -41,6 +44,7 @@ main {
 }
 
 main h3 {
+  width: 380px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #ec5242;
@@ -49,6 +53,7 @@ main h3 {
 }
 
 main h1 {
+  width: 380px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   margin: 0;
@@ -58,6 +63,7 @@ main h1 {
 }
 
 main p {
+  width: 380px;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   color: #272a31;
@@ -75,6 +81,7 @@ main p {
 }
 
 main h2 {
+  width: 380px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   color: #272a31;
@@ -116,7 +123,7 @@ footer img {
 #logo img {
   height: 150px;
   border: 1px solid  #d3d3d3;
-  padding: 10px 50px 15px 50px;
+  padding: 10px 50px 20px 50px;
 }
 
 .separator {
@@ -167,7 +174,7 @@ footer img {
   width: 380px;
   margin-bottom: 20px;
   filter: hue-rotate(185deg) sepia(10%) saturate(140%) blur(1px) brightness(70%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 #partners ul img {
@@ -236,4 +243,198 @@ footer {
 #p5 {
   grid-row: 2/3;
   grid-column: 5/8;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .desktop nav {
+    display: flex;
+  }
+
+  .desktop ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav-1 {
+    background-color: #272a31;
+    padding: 4px 12%;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .nav-2 {
+    background-color: white;
+    padding: 0 12% 8px 12%;
+    align-items: center;
+  }
+
+  .nav-1-list {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    gap: 20px;
+    padding: 0 0 0 10px;
+  }
+
+  .nav-1-list li,
+  .nav-2-list li {
+    cursor: pointer;
+  }
+
+  .nav-2-list {
+    margin-left: auto;
+    margin-right: 70px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #272a31;
+    gap: 70px;
+  }
+
+  .nav-2-list a {
+    text-decoration: none;
+    color: #ec5242;
+  }
+
+  footer img {
+    width: 280px;
+  }
+
+  .nav-1 img {
+    height: 18px;
+  }
+
+  .nav-2 img {
+    height: 80px;
+  }
+
+  .nav-2 span {
+    color: #ec5242;
+    border: 5px solid #ec5242;
+    padding: 12px 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .container {
+    background-image: url(../media/bg.jpg);
+    background-size: 1920px;
+    background-position-y: -15%;
+  }
+
+  main {
+    align-self: center;
+    margin: 0 12%;
+  }
+
+  main h3 {
+    display: none;
+  }
+
+  main h1 {
+    width: 900px;
+    font-size: 56px;
+    align-self: center;
+    margin-bottom: 40px;
+  }
+
+  .intro {
+    width: 800px;
+    font-size: 20px;
+    padding: 35px 50px;
+    line-height: 28px;
+    margin-top: 50px;
+  }
+
+  main p {
+    font-size: 24px;
+    width: auto;
+    align-self: center;
+  }
+
+  main h2 {
+    font-size: 38px;
+    width: auto;
+    align-self: center;
+  }
+
+  #logo h2,
+  #past-events h2 {
+    font-size: 28px;
+    font-weight: 700;
+    width: auto;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
+
+  #logo p,
+  #past-events p {
+    font-size: 20px;
+    width: 800px;
+    margin-bottom: 60px;
+  }
+
+  #logo img {
+    height: 250px;
+    padding: 25px 100px 40px;
+  }
+
+  .imgs {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+  }
+
+  #past-events img {
+    width: 500px;
+  }
+
+  #past-events .img-text h2 {
+    color: white;
+    filter: none;
+    font-weight: 900;
+    font-size: 42px;
+    margin: 0 0 10px 0;
+  }
+
+  #past-events .img-text p {
+    color: white;
+    filter: none;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0;
+  }
+
+  #partners {
+    padding: 35px 12%;
+  }
+
+  #partners ul {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #partners ul img {
+    width: 150px;
+  }
+
+  footer {
+    padding: 35px 12%;
+    gap: 300px;
+  }
 }
