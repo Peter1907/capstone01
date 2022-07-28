@@ -21,8 +21,7 @@ const aboutLink = document.createElement('a');
 aboutLink.href = '../pages/about.html';
 aboutLink.textContent = 'About';
 linksList.appendChild(aboutLink);
-const links =
-['Program', 'Join', 'Sponsor', 'News']
+const links = ['Program', 'Join', 'Sponsor', 'News'];
 const Campaign = document.createElement('span');
 Campaign.textContent = 'GSC Campaign';
 
@@ -53,13 +52,13 @@ closeBtn.addEventListener('click', () => {
 
 const imgText = document.querySelectorAll('.img-text');
 const eventImg = document.querySelectorAll('.img-container');
-for (let i = 0; i < imgText.length; i++) {
+for (let i = 0; i < imgText.length; i += 1) {
   eventImg[i].addEventListener('mouseover', () => {
     imgText[i].style.scale = 0;
   });
-};
-for (let i = 0; i < imgText.length; i++) {
+}
+for (let i = 0; i < imgText.length; i += 1) {
   eventImg[i].addEventListener('mouseout', () => {
     imgText[i].style.scale = 1;
   });
-};
+}

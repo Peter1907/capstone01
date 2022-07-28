@@ -48,7 +48,7 @@ Speakers.id = 'speakers';
 const program = document.querySelector('#program');
 program.after(Speakers);
 const SpeakersHeading = document.createElement('h2');
-SpeakersHeading.textContent = "Featured Speakers"
+SpeakersHeading.textContent = 'Featured Speakers';
 Speakers.appendChild(SpeakersHeading);
 const underline = document.createElement('div');
 underline.classList.add('underline');
@@ -58,19 +58,19 @@ const SpeakersList = document.createElement('ul');
 arr.forEach((ele) => {
   const Li = document.createElement('li');
   const Img = document.createElement('img');
-  Img.src = ele['img'];
-  Img.alt = ele['name'];
+  Img.src = ele.img;
+  Img.alt = ele.name;
   const TextBlock = document.createElement('div');
   TextBlock.classList.add('text-block');
   const H3 = document.createElement('h3');
-  H3.textContent = ele['name'];
+  H3.textContent = ele.name;
   const Title = document.createElement('p');
   Title.classList.add('title');
-  Title.textContent = ele['title'];
+  Title.textContent = ele.title;
   const underline2 = document.createElement('div');
   underline2.classList.add('underline-2');
   const Teams = document.createElement('p');
-  Teams.textContent = ele['teams'];
+  Teams.textContent = ele.teams;
   Li.appendChild(Img);
   TextBlock.appendChild(H3);
   TextBlock.appendChild(Title);
@@ -104,8 +104,7 @@ const aboutLink = document.createElement('a');
 aboutLink.href = './pages/about.html';
 aboutLink.textContent = 'About';
 linksList.appendChild(aboutLink);
-const links =
-['Program', 'Join', 'Sponsor', 'News']
+const links = ['Program', 'Join', 'Sponsor', 'News'];
 const Campaign = document.createElement('span');
 Campaign.textContent = 'GSC Campaign';
 
