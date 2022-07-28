@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -243,7 +244,7 @@ main h2 {
 }
 
 #speakers li img {
-  width: 150px;
+  width: 125px;
   height: auto;
 }
 
@@ -360,11 +361,14 @@ footer {
 
   .desktop nav {
     display: flex;
+    max-width: 100vw;
+    flex-wrap: wrap;
   }
 
   .desktop ul {
     display: flex;
     list-style-type: none;
+    flex-shrink: 1;
   }
 
   .nav-1 {
@@ -378,6 +382,7 @@ footer {
     background-color: white;
     padding: 0 12% 8px 12%;
     align-items: center;
+    justify-content: center;
   }
 
   .nav-1-list {
@@ -394,6 +399,7 @@ footer {
   .nav-2-list li {
     cursor: pointer;
     transition: all 0.1s ease-in-out;
+    flex-shrink: 1;
   }
 
   .nav-2 span {
@@ -409,6 +415,7 @@ footer {
   .nav-2-list a {
     text-decoration: none;
     color: #ec5242;
+    flex-shrink: 1;
   }
 
   .nav-1-list li:hover,
@@ -439,6 +446,7 @@ footer {
 
   .nav-2 img {
     height: 80px;
+    flex-shrink: 1;
   }
 
   .container {
@@ -449,18 +457,19 @@ footer {
 
   main {
     align-self: flex-start;
-    margin: 0 12%;
-    padding: 100px 0 130px;
+    padding: 100px 12% 130px;
   }
 
   main h3 {
     font-size: 42px;
     width: auto;
+    max-width: 80vw;
     font-weight: 500;
   }
 
   main h1 {
-    width: 900px;
+    width: 80vw;
+    max-width: 900px;
     font-size: 72px;
     background-position-y: 10%;
   }
@@ -480,6 +489,10 @@ footer {
     width: auto;
   }
 
+  #program {
+    max-width: 100vw;
+  }
+
   #program h2 {
     font-size: 28px;
     font-weight: 700;
@@ -491,6 +504,7 @@ footer {
     justify-content: center;
     gap: 5px;
     margin-top: 50px;
+    flex-wrap: wrap;
   }
 
   #program li {
@@ -529,6 +543,7 @@ footer {
   #speakers {
     padding: 50px 12%;
     margin: 0;
+    max-width: 100vw;
   }
 
   #speakers h2 {
@@ -537,18 +552,20 @@ footer {
   }
 
   #speakers ul {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 35px;
+    display: flex;
+    flex-wrap: wrap;
     width: auto;
     margin: 70px auto;
+    justify-content: center;
   }
 
   #speakers li {
-    width: 550px;
+    width: 450px;
   }
 
   #partners {
     padding: 35px 12%;
+    max-width: 100vw;
   }
 
   #partners ul {
@@ -556,6 +573,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   #partners ul img {
@@ -564,6 +582,6 @@ footer {
 
   footer {
     padding: 35px 12%;
-    gap: 300px;
+    justify-content: space-around;
   }
 }
