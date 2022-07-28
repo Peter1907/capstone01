@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -305,11 +306,14 @@ footer {
 
   .desktop nav {
     display: flex;
+    max-width: 100vw;
+    flex-wrap: wrap;
   }
 
   .desktop ul {
     display: flex;
     list-style-type: none;
+    flex-shrink: 1;
   }
 
   .nav-1 {
@@ -323,6 +327,7 @@ footer {
     background-color: white;
     padding: 0 12% 8px 12%;
     align-items: center;
+    justify-content: center;
   }
 
   .nav-1-list {
@@ -338,6 +343,32 @@ footer {
   .nav-1-list li,
   .nav-2-list li {
     cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    flex-shrink: 1;
+  }
+
+  .nav-2 span {
+    color: #ec5242;
+    border: 5px solid #ec5242;
+    padding: 12px 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .nav-2-list a {
+    text-decoration: none;
+    color: #ec5242;
+    flex-shrink: 1;
+  }
+
+  .nav-1-list li:hover,
+  .nav-2-list li:hover,
+  .nav-2 span:hover,
+  .nav-1 a:hover {
+    scale: 1.05;
+    font-weight: 700;
   }
 
   .nav-2-list {
@@ -350,11 +381,6 @@ footer {
     gap: 70px;
   }
 
-  .nav-2-list a {
-    text-decoration: none;
-    color: #ec5242;
-  }
-
   footer img {
     width: 280px;
   }
@@ -365,27 +391,18 @@ footer {
 
   .nav-2 img {
     height: 80px;
-  }
-
-  .nav-2 span {
-    color: #ec5242;
-    border: 5px solid #ec5242;
-    padding: 12px 20px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    cursor: pointer;
+    flex-shrink: 1;
   }
 
   .container {
     background-image: url(../media/bg.jpg);
     background-size: 1920px;
-    background-position-y: -13%;
+    background-position-y: -11%;
   }
 
   main {
     align-self: center;
-    margin: 0 12%;
-    padding-bottom: 100px;
+    padding: 100px 12% 130px;
   }
 
   main h3 {
@@ -393,14 +410,16 @@ footer {
   }
 
   main h1 {
-    width: 900px;
+    width: 80vw;
+    max-width: 900px;
     font-size: 56px;
     align-self: center;
     margin-bottom: 40px;
   }
 
   .intro {
-    width: 800px;
+    width: 80vw;
+    max-width: 900px;
     font-size: 20px;
     padding: 35px 50px;
     line-height: 28px;
@@ -433,7 +452,8 @@ footer {
   #logo p,
   #past-events p {
     font-size: 20px;
-    width: 800px;
+    width: 80vw;
+    max-width: 800px;
     margin-bottom: 60px;
   }
 
@@ -445,6 +465,8 @@ footer {
   .imgs {
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 100px;
   }
 
@@ -470,6 +492,7 @@ footer {
 
   #partners {
     padding: 35px 12%;
+    max-width: 100vw;
   }
 
   #partners ul {
@@ -477,6 +500,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   #partners ul img {
@@ -485,6 +509,6 @@ footer {
 
   footer {
     padding: 35px 12%;
-    gap: 300px;
+    justify-content: space-around;
   }
 }
