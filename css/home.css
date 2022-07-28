@@ -208,6 +208,11 @@ main h2 {
   font-size: 18px;
   padding: 30px 50px;
   margin: 50px auto;
+  transition: all 0.2s ease-in-out;
+}
+
+#program button:hover {
+  scale: 1.05;
 }
 
 #speakers {
@@ -388,6 +393,30 @@ footer {
   .nav-1-list li,
   .nav-2-list li {
     cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .nav-2 span {
+    color: #ec5242;
+    border: 5px solid #ec5242;
+    padding: 12px 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .nav-2-list a {
+    text-decoration: none;
+    color: #ec5242;
+  }
+
+  .nav-1-list li:hover,
+  .nav-2-list li:hover,
+  .nav-2 span:hover,
+  .nav-1 a:hover {
+    scale: 1.05;
+    font-weight: 700;
   }
 
   .nav-2-list {
@@ -400,11 +429,6 @@ footer {
     gap: 70px;
   }
 
-  .nav-2-list a {
-    text-decoration: none;
-    color: #ec5242;
-  }
-
   footer img {
     width: 280px;
   }
@@ -415,15 +439,6 @@ footer {
 
   .nav-2 img {
     height: 80px;
-  }
-
-  .nav-2 span {
-    color: #ec5242;
-    border: 5px solid #ec5242;
-    padding: 12px 20px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    cursor: pointer;
   }
 
   .container {
